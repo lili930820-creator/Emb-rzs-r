@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embörzsör Kft. | Kézműves Burgerek és Desszertek</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#ffb703;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1550547660-d9450f859349") center/cover;
+display:flex;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ffb703;
+color:black;
+font-weight:600;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ffd166;
+}
+
+/* SECTION */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:36px;
+}
+
+/* MENU */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.menu-card{
+background:#1a1a1a;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-8px);
+}
+
+.menu-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.menu-card h3{
+padding:15px;
+font-size:22px;
+}
+
+.menu-card p{
+padding:0 15px 20px;
+color:#bbb;
+}
+
+/* WHY US */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.feature{
+background:#1a1a1a;
+padding:30px;
+border-radius:15px;
+}
+
+/* REVIEWS */
+
+.reviews{
+background:#1a1a1a;
+}
+
+.review{
+max-width:700px;
+margin:auto;
+text-align:center;
+margin-bottom:40px;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+padding:40px 0;
+text-align:center;
+color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">Embörzsör</div>
+
+<ul>
+<li><a href="#">Főoldal</a></li>
+<li><a href="#menu">Menü</a></li>
+<li><a href="#dessert">Desszertek</a></li>
+<li><a href="#contact">Kapcsolat</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+<header class="hero">
+
+<div class="container">
+
+<h1>Brutálisan jó burgerek</h1>
+
+<p>Kézműves hamburgerek és házi desszertek – frissen, minden nap.</p>
+
+<a href="#menu" class="btn">Menü megtekintése</a>
+
+</div>
+
+</header>
+
+<section id="menu">
+
+<div class="container">
+
+<h2 class="section-title">Népszerű Burgereink</h2>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Classic Embörzsör burger">
+<h3>Classic Embörzsör</h3>
+<p>Marhahús, cheddar, saláta, paradicsom, házi szósz.</p>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b" alt="Bacon Bomb burger">
+<h3>Bacon Bomb</h3>
+<p>Dupla hús, ropogós bacon, cheddar és BBQ szósz.</p>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1606755962773-d324e2c9d0e3" alt="Chili Inferno burger">
+<h3>Chili Inferno</h3>
+<p>Csípős jalapeno, chili szósz, sajt és marhahús.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Miért az Embörzsör?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Friss alapanyagok</h3>
+<p>Minden burger frissen készül prémium alapanyagokból.</p>
+</div>
+
+<div class="feature">
+<h3>Kézműves recept</h3>
+<p>Egyedi szószok és saját burger receptek.</p>
+</div>
+
+<div class="feature">
+<h3>Gyors kiszolgálás</h3>
+<p>Minőség street food tempóban.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="dessert">
+
+<div class="container">
+
+<h2 class="section-title">Desszertek</h2>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1551024709-8f23befc6c43" alt="Csoki brownie desszert">
+<h3>Csoki Brownie</h3>
+<p>Olvadó csokoládé és vanília fagyi.</p>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1605475128023-54a3c51e0f09" alt="Amerikai palacsinta desszert">
+<h3>Amerikai Palacsinta</h3>
+<p>Juharszirup, gyümölcsök és tejszínhab.</p>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Sajttorta desszert">
+<h3>Sajttorta</h3>
+<p>Klasszikus New York cheesecake.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<div class="container">
+
+<h2 class="section-title">Vendégeink mondták</h2>
+
+<div class="review">
+<p>"A legjobb burger a városban. Brutális ízek!"</p>
+<strong>- András</strong>
+</div>
+
+<div class="review">
+<p>"A brownie konkrétan függőséget okoz."</p>
+<strong>- Dóra</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container" style="text-align:center">
+
+<h2 class="section-title">Látogass el hozzánk!</h2>
+
+<p>Budapest – Nyitva minden nap 11:00–22:00</p>
+
+<br>
+
+<a href="#" class="btn">Rendelés</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Embörzsör Kft. – Minden jog fenntartva</p>
+
+</footer>
+
+</body>
+</html>
